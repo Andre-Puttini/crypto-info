@@ -1,0 +1,184 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BASE */
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0b0f1a;
+    color: #e5e7eb;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px 15px;
+    background: #020617;
+    border-bottom: 1px solid rgba(250, 204, 21, 0.15);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #facc15;
+}
+
+header p {
+    margin-top: 8px;
+    color: #94a3b8;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+}
+
+main.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* CARD */
+.crypto-card {
+    background: radial-gradient(circle at top, #111827, #020617);
+    border-radius: 16px;
+    padding: 26px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    box-shadow: 0 0 35px rgba(250, 204, 21, 0.15);
+    border: 1px solid rgba(250, 204, 21, 0.25);
+}
+
+.crypto-card img {
+    width: 130px;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    border: 2px solid #facc15;
+}
+
+.crypto-card h2 {
+    color: #facc15;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #cbd5f5;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* PRICE */
+.price {
+    font-size: 1.05rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #facc15;
+}
+
+.price strong {
+    display: block;
+    margin-top: 6px;
+    color:#facc15;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 16px 10px;
+    text-align: center;
+    border-top: 1px solid rgba(250, 204, 21, 0.15);
+}
+
+/* Socials */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+/* Logo da moeda */
+.coin-logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    border: 1px solid #facc15;
+}
+
+/* Links sociais */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #facc15;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.social-link img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Copyright */
+.footer-copy {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+    main.container {
+        padding: 50px;
+    }
+
+    .crypto-card {
+        max-width: 420px;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main.container {
+        padding: 70px;
+    }
+
+    .crypto-card {
+        max-width: 460px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-socials {
+        gap: 10px;
+    }
+
+    .coin-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-link {
+        font-size: 0.8rem;
+    }
+}

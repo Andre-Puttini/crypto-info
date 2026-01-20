@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}Crypto Info{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Crypto Info</h1>
+        <p>Cryptocurrency Information</p>
+    </header>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+    <div class="footer-socials">
+        <!-- Logo da moeda -->
+        <img src="{% static 'images/Moeda.jpeg' %}" alt="$SAMCOIN" class="coin-logo">
+            $SAMCOIN
+
+        <!-- X / Twitter -->
+        <a href="https://x.com/samcoin5247?s=21" target="_blank" class="social-link">
+            <img src="{% static 'images/Twitter.svg' %}" alt="X">
+            @samcoin5247
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/+0ku1EKsOXlRmNzNh" target="_blank" class="social-link">
+            <img src="{% static 'images/Telegram.svg' %}" alt="Telegram">
+            Telegram
+        </a>
+    </div>
+
+    <p class="footer-copy">© 2026 - Crypto Info</p>
+</footer>
+
+
+</body>
+</html>

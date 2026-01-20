@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home - Crypto Info{% endblock %}
+
+{% block content %}
+    <div class="crypto-card">
+        <img src="{% static 'images/Moeda.jpeg' %}" alt="$SAMCOIN Logo" class="crypto-logo">
+
+        <h2>$SAMCOIN</h2>
+
+        <p class="description">
+           $SAMCOIN is a meme coin inspired by the iconic “We Want You” symbol
+           . Built for memes, community, and pure hype no utility, 
+           just culture. Uncle Sam wants YOU to join the ride. 🇺🇸🚀
+        </p>
+
+        <div class="price">
+            <span>Current value:</span>
+            <strong>$: ???</strong>
+        </div>
+    </div>
+{% endblock %}
